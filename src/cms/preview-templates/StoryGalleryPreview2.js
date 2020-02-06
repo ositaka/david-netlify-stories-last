@@ -8,7 +8,7 @@ const StoryGalleryPreview2 = ({ entry, widgetFor }) => {
 	if (data) {
 		return (
 			<>
-				<BlogPostTemplate gallerySwiper={data.gallery || { images: [] }} />
+				<BlogPostTemplate gallery={data.gallery || { images: [] }} />
 			</>
 		)
 	} else {
