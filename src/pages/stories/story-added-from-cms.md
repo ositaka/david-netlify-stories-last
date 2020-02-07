@@ -1,12 +1,8 @@
 ---
-templateKey: blog-post
+templateKey: 'story-gallery'
 title: Story added from CMS
-date: 2020-02-06T16:44:38.840Z
-description: Story added from CMS
-featuredpost: false
+date: 2020-02-04T15:04:10.000Z
 featuredimage: /img/sintra_04.jpg
-tags:
-  - stories
 gallery:
   images:
     - image: /img/sintra_04.jpg
@@ -16,4 +12,5 @@ gallery:
       model: model 2
       title: title 2
 ---
+
 Story added from CMS

@@ -1,25 +1,17 @@
 ---
-templateKey: blog-post
+templateKey: 'story-gallery'
 title: Space Shot
-date: 2019-12-17T15:04:10.000Z
-featuredpost: false
-featuredimage: /img/flavor_wheel.jpg
-description: The Coffee Taster’s Flavor Wheel, the official resource used by coffee tasters, has been revised for the first time this year.
-tags:
-  - flavor
-  - tasting
+date: 2020-01-08T15:04:10.000Z
+featuredimage: /img/space-shot-1.jpg
 gallery:
   images:
-    - image: /img/blog-index.jpg
-      model: Another Model
-      title: Second image
-    - image: /img/chemex.jpg
-      model: Nuno Marques
-      title: First image edited
-    - image: /img/flavor_wheel.jpg
-      model: Model Name
-      title: Third Image
-    - image: /img/products-grid1.jpg
-      model: and the model
-      title: Forth image
+    - image: /img/space-shot-1.jpg
+      model: Samuel Bonnapart
+      title: First title of Space Shot
+    - image: /img/space-shot-2.jpg
+      model: Samuel Bonnapart & Dora Stavinsky
+      title: Second title of Space Shot
+    - image: /img/space-shot-3.jpg
+      model: Samuel Bonnapart, Dora Stavinsky & Another Name
+      title: Third title of Space Shot
 ---

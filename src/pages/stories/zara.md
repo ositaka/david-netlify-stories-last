@@ -1,32 +1,17 @@
 ---
-templateKey: 'blog-post'
+templateKey: 'story-gallery'
 title: Zara
-date: 2020-02-04T15:04:10.000Z
-featuredpost: true
-featuredimage: /img/flavor_wheel.jpg
-description: >-
-  We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
-  Mountain coffee beans in our store next week.
-tags:
-  - jamaica
-  - green beans
-  - flavor
-  - tasting
+date: 2020-02-02T15:04:10.000Z
+featuredimage: /img/zara-1.jpg
 gallery:
   images:
-    - image: /img/chemex.jpg
-      model: Nuno Marques
-      title: First image
-    - image: /img/blog-index.jpg
-      model: Another Model
-      title: Second image
-    - image: /img/flavor_wheel.jpg
-      model: Model Name
-      title: Third Image
-    - image: /img/products-grid1.jpg
-      model: and the model
-      title: Forth image
-    - image: ../../img/logo.svg
-      model: and the model test
-      title: Test
+    - image: /img/zara-1.jpg
+      model: Zara Tolinsky
+      title: First title of Zara
+    - image: /img/zara-2.jpg
+      model: Zara Tolinsky & Dora Stavinsky
+      title: Second title of Zara
+    - image: /img/zara-3.jpg
+      model: Zara Tolinsky & Another Name
+      title: Third title of Zara
 ---

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { BlogPostTemplate } from '../../templates/blog-post'
+import { StoryGalleryTemplate } from '../../templates/story-gallery'
 
 const StoryGalleryPreview2 = ({ entry, widgetFor }) => {
 	const data = entry.getIn(['data']).toJS()
@@ -8,7 +8,7 @@ const StoryGalleryPreview2 = ({ entry, widgetFor }) => {
 	if (data) {
 		return (
 			<>
-				<BlogPostTemplate gallery={data.gallery || { images: [] }} />
+				<StoryGalleryTemplate gallery={data.gallery || { images: [] }} />
 			</>
 		)
 	} else {

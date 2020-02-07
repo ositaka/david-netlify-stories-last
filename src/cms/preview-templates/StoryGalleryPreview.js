@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { BlogPostTemplate } from '../../templates/blog-post'
+import { StoryGalleryTemplate } from '../../templates/story-gallery'
 
 const StoryGalleryPreview = ({ entry, widgetFor }) => {
 	// nuno
@@ -9,7 +9,7 @@ const StoryGalleryPreview = ({ entry, widgetFor }) => {
 
 	// const tags = entry.getIn(['data', 'tags'])
 	return (
-		<BlogPostTemplate
+		<StoryGalleryTemplate
 			// content={widgetFor('body')}
 			// description={entry.getIn(['data', 'description'])}
 			// tags={tags && tags.toJS()}
