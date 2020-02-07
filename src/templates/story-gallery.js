@@ -92,7 +92,7 @@ export const pageQuery = graphql`
 // ---------------------------------------------------
 
 // REVIEW DEPENDENCY
-// ADDED ON package.JSON
+// ADD ON package.JSON
 
 // ***********
 // other example:
