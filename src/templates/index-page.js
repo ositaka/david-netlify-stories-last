@@ -6,9 +6,7 @@ import Layout from '../components/Layout'
 import HeroSwiper from '../components/HeroSwiper'
 import StoriesRoll from '../components/StoriesRoll'
 import ContactForm from '../components/ContactForm'
-
-import GallerySwiper from '../components/GallerySwiper'
-import '../components/GallerySwiper.css'
+import '../components/StoriesRoll.css'
 
 export const IndexPageTemplate = ({ heroSwiper, gallerySwiper, biography }) => (
 	<div>
@@ -18,15 +16,11 @@ export const IndexPageTemplate = ({ heroSwiper, gallerySwiper, biography }) => (
 		</section>
 		<section id="stories" className="section">
 			<h1>Stories</h1>
-			<GallerySwiper slides={gallerySwiper.images} />
+			<StoriesRoll />
 		</section>
 		<section id="biography" className="section">
 			<h1>Biography</h1>
 			<p>{biography}</p>
-		</section>
-		<section id="stories-roll" className="section">
-			<h1>Stories Roll</h1>
-			<StoriesRoll />
 		</section>
 		<section id="inquiries" className="section">
 			<h1>Inquiries</h1>

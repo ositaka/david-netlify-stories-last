@@ -3,52 +3,50 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
+import Swiper from 'react-id-swiper'
+import 'swiper/css/swiper.css'
+
 class StoriesRoll extends React.Component {
 	render() {
 		const { data } = this.props
 		const { edges: posts } = data.allMarkdownRemark
 
+		const params = {
+			slidesPerView: 1.8,
+			loop: true,
+			speed: 900,
+
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true
+			}
+		}
+
 		return (
-			<div className="columns is-multiline">
+			<Swiper {...params}>
 				{posts &&
 					posts.map(({ node: post }) => (
-						<div className="is-parent column is-6" key={post.id}>
-							<article
-								className={`blog-list-item tile is-child box notification ${
-									post.frontmatter.featuredpost ? 'is-featured' : ''
-								}`}
+						<div key={post.id}>
+							<Link
+								className="title has-text-primary is-size-4"
+								to={post.fields.slug}
 							>
-								<header>
-									{post.frontmatter.featuredimage ? (
-										<div className="featured-thumbnail">
-											<PreviewCompatibleImage
-												imageInfo={{
-													image: post.frontmatter.featuredimage,
-													alt: `featured image thumbnail for post ${
-														post.frontmatter.title
-													}`
-												}}
-											/>
-										</div>
-									) : null}
-									<p className="post-meta">
-										<Link
-											className="title has-text-primary is-size-4"
-											to={post.fields.slug}
-										>
-											{post.frontmatter.title}
-										</Link>
-									</p>
-								</header>
-								<p>
-									<Link className="button" to={post.fields.slug}>
-										View Gallery →
-									</Link>
-								</p>
-							</article>
+								{post.frontmatter.featuredimage ? (
+									<PreviewCompatibleImage
+										imageInfo={{
+											image: post.frontmatter.featuredimage,
+											alt: `featured image thumbnail for storie ${
+												post.frontmatter.title
+											}`
+										}}
+									/>
+								) : null}
+								<h4>{post.frontmatter.title}</h4>
+								<p>{post.frontmatter.model}</p>
+							</Link>
 						</div>
 					))}
-			</div>
+			</Swiper>
 		)
 	}
 }
@@ -71,7 +69,6 @@ export default () => (
 				) {
 					edges {
 						node {
-							excerpt(pruneLength: 400)
 							id
 							fields {
 								slug
@@ -81,7 +78,7 @@ export default () => (
 								templateKey
 								featuredimage {
 									childImageSharp {
-										fluid(maxWidth: 120, quality: 100) {
+										fluid(maxWidth: 2048, quality: 100) {
 											...GatsbyImageSharpFluid
 										}
 									}
