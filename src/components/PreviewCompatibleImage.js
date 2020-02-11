@@ -8,7 +8,20 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 
 	if (!!image && !!image.childImageSharp) {
 		return (
-			<Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+			// original - <Img style={imageStyle} fluid={image.childImageSharp.fluid} alt={alt} />
+			// fix for "react-id-swiper" // more at: https://spectrum.chat/gatsby-js/general/i-am-having-trouble-with-imagesharp-plugin-when-used-in-react-id-swiper~6785e7ad-47f5-4371-a358-5297157816c5
+			<Img
+				style={imageStyle}
+				fluid={image.childImageSharp.fluid}
+				alt={alt}
+				loading="eager"
+				imgStyle={{
+					opacity: 1
+				}}
+				placeholderStyle={{
+					opacity: 0
+				}}
+			/>
 		)
 	}
 
