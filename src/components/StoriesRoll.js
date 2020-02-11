@@ -27,10 +27,7 @@ class StoriesRoll extends React.Component {
 				{posts &&
 					posts.map(({ node: post }) => (
 						<div key={post.id}>
-							<Link
-								className="title has-text-primary is-size-4"
-								to={post.fields.slug}
-							>
+							<Link className="story-title" to={post.fields.slug}>
 								{post.frontmatter.featuredimage ? (
 									<PreviewCompatibleImage
 										imageInfo={{
@@ -41,8 +38,10 @@ class StoriesRoll extends React.Component {
 										}}
 									/>
 								) : null}
-								<h4>{post.frontmatter.title}</h4>
-								<p>{post.frontmatter.model}</p>
+								<div className="story-title">
+									<h4>{post.frontmatter.title}</h4>
+									<p>{post.frontmatter.subtitle}</p>
+								</div>
 							</Link>
 						</div>
 					))}
@@ -75,6 +74,7 @@ export default () => (
 							}
 							frontmatter {
 								title
+								subtitle
 								templateKey
 								featuredimage {
 									childImageSharp {

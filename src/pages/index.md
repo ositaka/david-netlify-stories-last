@@ -1,5 +1,7 @@
 ---
 templateKey: index-page
+title: David Alioth
+subtitle: Photography
 heroSwiper:
   images:
     - image: /img/samuel-3.jpg
@@ -8,34 +10,12 @@ heroSwiper:
       title: Another Photo
     - image: /img/space-shot-3.jpg
       title: Space Shot
-gallerySwiper:
-  images:
-    - image: /img/samuel-1.jpg
-      title: Samuel 1
-      model: Samuel Bonnapart
-    - image: /img/samuel-2.jpg
-      title: Samuel 2
-      model: Samuel Bonnapart
-    - image: /img/samuel-3.jpg
-      title: Samuel 3
-      model: Samuel Bonnapart
-    - image: /img/zara-1.jpg
-      title: Zara 1
-      model: Zara Worisky
-    - image: /img/zara-2.jpg
-      title: Zara 2
-      model: Zara Worisky
-    - image: /img/zara-3.jpg
-      title: Zara 3
-      model: Zara Worisky
-    - image: /img/space-shot-1.jpg
-      title: Space Shot 1
-      model: Ziziel Sampaio
-    - image: /img/space-shot-2.jpg
-      title: Space Shot 2
-      model: Ziziel Sampaio
-    - image: /img/space-shot-3.jpg
-      title: Space Shot 3
-      model: Ziziel Sampaio
-biography: And... Where is the biography?
+biography:
+  text: >-
+    This is how I describe myself, something about my roots and my intentions. I focus on this and that and my passion is this and that. A short nice text that describes people need to know about me as photographer.
+  author: David Alioth
+  tagline: Something you want to add
+contact:
+  title: Interested in working with me?
+  email: info@davidalioth.com
 ---

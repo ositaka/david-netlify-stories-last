@@ -1,6 +1,7 @@
 ---
 templateKey: 'story-gallery'
 title: Space Shot
+subtitle: Feodora, Praia da Ursa, 2019
 date: 2020-01-08T15:04:10.000Z
 featuredimage: /img/space-shot-1.jpg
 gallery:

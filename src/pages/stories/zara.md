@@ -1,6 +1,7 @@
 ---
 templateKey: 'story-gallery'
 title: Zara
+subtitle: Koko, Portugal, 2019
 date: 2020-02-02T15:04:10.000Z
 featuredimage: /img/zara-1.jpg
 gallery:

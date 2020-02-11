@@ -8,35 +8,56 @@ import StoriesRoll from '../components/StoriesRoll'
 import ContactForm from '../components/ContactForm'
 import '../components/StoriesRoll.css'
 
-export const IndexPageTemplate = ({ heroSwiper, gallerySwiper, biography }) => (
+export const IndexPageTemplate = ({
+	title,
+	subtitle,
+	heroSwiper,
+	biography,
+	author,
+	tagline,
+	contactTitle,
+	email
+}) => (
 	<div>
-		<section id="home" className="section">
-			<h1>David Alioth</h1>
-			<HeroSwiper slides={heroSwiper.images} />
+		<section id="home">
+			<div className="hero">
+				<h1 className="title">{title}</h1>
+				<h2 className="title title-stroke">{subtitle}</h2>
+			</div>
+			<div className="hero-swiper">
+				<HeroSwiper slides={heroSwiper.images} />
+			</div>
 		</section>
-		<section id="stories" className="section">
-			<h1>Stories</h1>
+		<section id="stories">
+			<h1 className="title">Stories</h1>
 			<StoriesRoll />
 		</section>
 		<section id="biography" className="section">
-			<h1>Biography</h1>
-			<p>{biography}</p>
+			<blockquote>{biography}</blockquote>
+			<p>{author}</p>
+			<small>{tagline}</small>
 		</section>
-		<section id="inquiries" className="section">
-			<h1>Inquiries</h1>
+		<section id="inquiries" className="contact">
+			<h1 className="title">Business Inquiries</h1>
+			<h2>{contactTitle}</h2>
 			<ContactForm />
+			<p>Contact me {email}</p>
+			<p>Follow me</p>
 		</section>
 	</div>
 )
 
 IndexPageTemplate.propTypes = {
+	title: PropTypes.string,
+	subtitle: PropTypes.string,
 	heroSwiper: PropTypes.shape({
 		images: PropTypes.array
 	}),
-	gallerySwiper: PropTypes.shape({
-		images: PropTypes.array
-	}),
-	biography: PropTypes.string
+	biography: PropTypes.string,
+	author: PropTypes.string,
+	tagline: PropTypes.string,
+	contactTitle: PropTypes.string,
+	email: PropTypes.string
 }
 
 const IndexPage = ({ data }) => {
@@ -45,9 +66,14 @@ const IndexPage = ({ data }) => {
 	return (
 		<Layout>
 			<IndexPageTemplate
+				title={frontmatter.title}
+				subtitle={frontmatter.subtitle}
 				heroSwiper={frontmatter.heroSwiper}
-				gallerySwiper={frontmatter.gallerySwiper}
-				biography={frontmatter.biography}
+				biography={frontmatter.biography.text}
+				author={frontmatter.biography.author}
+				tagline={frontmatter.biography.tagline}
+				contactTitle={frontmatter.contact.title}
+				email={frontmatter.contact.email}
 			/>
 		</Layout>
 	)
@@ -67,6 +93,8 @@ export const pageQuery = graphql`
 	query IndexPageTemplate {
 		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
 			frontmatter {
+				title
+				subtitle
 				heroSwiper {
 					images {
 						image {
@@ -79,20 +107,15 @@ export const pageQuery = graphql`
 						title
 					}
 				}
-				gallerySwiper {
-					images {
-						image {
-							childImageSharp {
-								fluid(maxWidth: 2048, quality: 64) {
-									...GatsbyImageSharpFluid
-								}
-							}
-						}
-						title
-						model
-					}
+				biography {
+					text
+					author
+					tagline
 				}
-				biography
+				contact {
+					title
+					email
+				}
 			}
 		}
 	}

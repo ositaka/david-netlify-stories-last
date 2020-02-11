@@ -1,6 +1,7 @@
 ---
 templateKey: 'story-gallery'
 title: Samuel
+subtitle: Samuel, Praia da Ursa, 2019
 date: 2020-01-04T15:04:10.000Z
 featuredimage: /img/samuel-1.jpg
 gallery:

@@ -1,13 +1,12 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import scrollTo from 'gatsby-plugin-smoothscroll'
+import instagram from '../img/social/instagram.svg'
 
 const Navbar = class extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			active: false,
+			active: true,
 			navBarActiveClass: ''
 		}
 	}
@@ -41,9 +40,6 @@ const Navbar = class extends React.Component {
 			>
 				<div className="container">
 					<div className="navbar-brand">
-						<Link to="/" className="navbar-item" title="Logo">
-							<img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-						</Link>
 						{/* Hamburger menu */}
 						<div
 							className={`navbar-burger burger ${this.state.navBarActiveClass}`}
@@ -60,33 +56,31 @@ const Navbar = class extends React.Component {
 						className={`navbar-menu ${this.state.navBarActiveClass}`}
 					>
 						<div className="navbar-start has-text-centered">
-							<Link className="navbar-item" to="/about">
-								About
-							</Link>
-							<Link className="navbar-item" to="/products">
-								Products
-							</Link>
-							<Link className="navbar-item" to="/stories">
-								Stories
-							</Link>
-							<Link className="navbar-item" to="/contact">
-								Contact
-							</Link>
-							<Link className="navbar-item" to="/contact/examples">
-								Form Examples
-							</Link>
-						</div>
-						<div className="navbar-end has-text-centered">
 							<a
 								className="navbar-item"
-								href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
-								target="_blank"
-								rel="noopener noreferrer"
+								title="instagram"
+								href="https://instagram.com/the_davidalioth/"
 							>
-								<span className="icon">
-									<img src={github} alt="Github" />
-								</span>
+								<img
+									src={instagram}
+									alt="Instagram"
+									style={{ width: '1.2em', height: '1.2em' }}
+								/>
 							</a>
+						</div>
+						<div className="navbar-end has-text-centered">
+							<button
+								className="navbar-item"
+								onClick={() => scrollTo('#stories')}
+							>
+								Stories
+							</button>
+							<button
+								className="navbar-item"
+								onClick={() => scrollTo('#inquiries')}
+							>
+								Inquiries
+							</button>
 						</div>
 					</div>
 				</div>
