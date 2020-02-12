@@ -208,6 +208,53 @@ body
     margin-top: -3px
     opacity: .3
 
+.contact
+  width: 62vw
+  .title
+    font-size: 8vw
+    line-height: 102%
+    margin-bottom: 13.5vw
+  .subtitle
+    font-size: 3.3vw
+    color: white
+    padding-right: 4vw
+    margin-bottom: 4vw
+  .label 
+    color: white
+    text-transform: uppercase
+    font-weight: 300
+    font-size: .8rem
+  .input,
+  .textarea
+    font-size: 1.3rem
+    font-weight: 300
+    color: rgba(255,255,255,.63)
+    background: transparent
+    border: unset
+    border-bottom: 1px solid white
+    border-radius: 0
+    margin-bottom: 4vw
+    padding-left: 0
+    padding-right: 0
+    -webkit-transition: all .15s ease
+    transition: all .15s ease
+    &:focus
+      color: white
+      border-bottom-width: 2px
+      box-shadow: none
+    &::placeholder
+      font-weight: 300
+      color: rgba(255,255,255,.63)
+  .button
+    text-transform: uppercase
+    letter-spacing: 2.5px
+    border: 1px solid white
+    border-radius: 0
+    background: transparent
+    padding: .8vw 2.5vw
+    height: unset
+    box-shadow: none
+
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail

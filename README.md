@@ -2,6 +2,10 @@
 
 Under development
 
+- currently:
+
+  - finishing contact form
+
 - added:
   - /stories
   - "lightbox" for gallery w/ react-id-swiper (StorySwiper.js)

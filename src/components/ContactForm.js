@@ -52,7 +52,7 @@ export default class Index extends React.Component {
 				</div>
 				<div className="field">
 					<label className="label" htmlFor={'name'}>
-						Your name
+						Name
 					</label>
 					<div className="control">
 						<input
@@ -62,6 +62,7 @@ export default class Index extends React.Component {
 							onChange={this.handleChange}
 							id={'name'}
 							required={true}
+							placeholder={'Your Name'}
 						/>
 					</div>
 				</div>
@@ -77,6 +78,7 @@ export default class Index extends React.Component {
 							onChange={this.handleChange}
 							id={'email'}
 							required={true}
+							placeholder={'Your Email'}
 						/>
 					</div>
 				</div>
@@ -91,6 +93,7 @@ export default class Index extends React.Component {
 							onChange={this.handleChange}
 							id={'message'}
 							required={true}
+							placeholder={'Your Message'}
 						/>
 					</div>
 				</div>
