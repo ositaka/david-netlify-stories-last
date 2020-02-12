@@ -16,10 +16,12 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 				alt={alt}
 				loading="eager"
 				imgStyle={{
-					opacity: 1
+					opacity: 1,
+					transition: 'all 600ms ease'
 				}}
 				placeholderStyle={{
-					opacity: 0
+					opacity: 0,
+					transition: 'all 600ms ease'
 				}}
 			/>
 		)

@@ -12,13 +12,11 @@ class StoriesRoll extends React.Component {
 		const { edges: posts } = data.allMarkdownRemark
 
 		const params = {
-			slidesPerView: 1.8,
+			slidesPerView: 2,
 			loop: true,
 			speed: 900,
-
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true
+			navigation: {
+				nextEl: '.swiper-button-next'
 			}
 		}
 

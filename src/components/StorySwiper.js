@@ -5,11 +5,15 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Swiper from 'react-id-swiper'
 import 'swiper/css/swiper.css'
 
-const StoryGallery = ({ slides }) => {
+const StorySwiper = ({ gallery }) => {
 	const params = {
-		slidesPerView: 1.8,
+		slidesPerView: 1,
 		loop: true,
 		speed: 900,
+		autoplay: {
+			delay: 12000,
+			disableOnInteraction: false
+		},
 
 		pagination: {
 			el: '.swiper-pagination',
@@ -18,20 +22,23 @@ const StoryGallery = ({ slides }) => {
 	}
 
 	return (
-		<Swiper {...params}>
-			{slides.map(image => (
-				<div key={image.title}>
-					<h4>{image.title}</h4>
-					<p>{image.model}</p>
-					<PreviewCompatibleImage imageInfo={image} />
-				</div>
-			))}
-		</Swiper>
+		<>
+			<a href="javascript:history.back()">Go Back</a>
+			<Swiper {...params}>
+				{gallery.map(image => (
+					<div key={image.title}>
+						<PreviewCompatibleImage imageInfo={image} />
+						<h4>{image.title}</h4>
+						<p>{image.model}</p>
+					</div>
+				))}
+			</Swiper>
+		</>
 	)
 }
 
-StoryGallery.propTypes = {
-	slides: PropTypes.arrayOf(
+StorySwiper.propTypes = {
+	gallery: PropTypes.arrayOf(
 		PropTypes.shape({
 			image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 			title: PropTypes.string,
@@ -40,4 +47,4 @@ StoryGallery.propTypes = {
 	)
 }
 
-export default StoryGallery
+export default StorySwiper

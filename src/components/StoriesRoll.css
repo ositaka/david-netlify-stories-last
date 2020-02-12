@@ -2,6 +2,15 @@
 	height: 80vh;
 }
 
+#home .swiper-pagination-bullet-active {
+	background: white !important;
+}
+
+#stories .title {
+	left: 52.5vw;
+	transform: translateY(26vw);
+}
+
 #stories .swiper-slide {
 	transition: all 800ms ease;
 	/* padding-top: 15%; */
@@ -26,7 +35,7 @@
 
 .story-title {
 	margin-top: 1.5rem;
-	margin-left: 6%;
+	margin-left: 4.25vw;
 	transition: all 300ms ease;
 }
 
@@ -37,6 +46,17 @@
 #stories .swiper-slide-active .story-title p {
 	animation: subtitle-delay 2s ease;
 	animation-delay: 160ms;
+}
+
+#stories .swiper-button-next {
+	right: 0;
+	width: 27.55vw;
+	height: 100%;
+	top: 0;
+}
+
+#stories .swiper-button-next::after {
+	display: none;
 }
 
 @keyframes title-delay {

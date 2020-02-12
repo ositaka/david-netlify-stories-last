@@ -99,14 +99,14 @@ footer.footer
 body
   color: white
   background-color: #1e252c
-  letter-spacing: 2.5px
+  letter-spacing: 0.15vw
 .navbar
-  height: 3rem
-  padding-top: 3rem
-  padding-bottom: 1.5rem
+  height: 3vw
+  padding-top: 2.5vw
+  padding-bottom: 2.15vw
   background-color: transparent
   .container
-    max-width: 90%!important;
+    max-width: 87.5vw!important
   button,
   .navbar-item
     background-color: transparent
@@ -125,31 +125,33 @@ body
     &:focus
       opacity: 1
   .navbar-end .navbar-item
-    margin-right: 4rem
+    margin-right: 4vw
   .navbar-end .navbar-item:last-of-type
     margin-right: 0
 .title
-  font-size: 8rem
+  font-size: 8.3vw
   font-weight: bold
   color: white
-  letter-spacing: 5.5px
+  letter-spacing: .37vw
   text-transform: uppercase
-  position: relative;
+  position: relative
   z-index: 2
 .title-stroke
-  font-size: 7.35rem
+  font-size: 7.62vw
   color: transparent
   -webkit-text-stroke: 2px white
-  transform: translateY(-74%)
-  margin-bottom: -12.4rem
+  transform: translateY(-6.3vw)
+  margin-bottom: -12.9vw
   z-index: 1
 .hero,
 .contact
-  padding-left: 12%;
-  padding-right: 12%;
+  padding-left: 12%
+  padding-right: 12%
 
 .hero
-  margin-top: 6rem
+  margin-top: 5vw
+  h1
+    margin-bottom: 0
 .hero-swiper
   position: relative
   z-index: 0
@@ -160,14 +162,15 @@ body
     left: 1rem!important
     top: 0
     span
-      padding: .25rem
+      padding: 3.5px
       background: transparent
       border: 1px solid white
       opacity: 1
-    .swiper-pagination-bullet-active
-      background: white!important
 
 #stories
+  .title
+    font-size: 8vw
+    z-index: 0
   a 
     color: white
   .story-title
@@ -176,6 +179,34 @@ body
     font-weight: bold
   p
     font-size: .8rem
+      
+#biography
+  padding: 25vw 30vw
+  blockquote
+    font-size: 1.8vw
+    padding-left: 4vw
+    &:before
+      background: url(../img/quote-mark.svg) center no-repeat
+      background-size: contain
+      content: '';
+      display: block
+      height: 6.71vw
+      width: 6.71vw
+      position: absolute
+      margin-left: -7.4vw
+      margin-top: -6.75vw
+  p
+    font-size: .9rem
+    text-transform: uppercase
+    text-align: right
+    margin-right: 1.1vw
+    margin-top: 3vw
+  small
+    float: right
+    letter-spacing: 1px
+    margin-right: 1.1vw
+    margin-top: -3px
+    opacity: .3
 
 // responsiveness
 +tablet-only
@@ -189,3 +220,15 @@ body
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+  .title-stroke
+    -webkit-text-stroke-width: 1px
+  #biography
+    padding-left: 20vw
+    padding-right: 20vw
+    blockquote
+      font-size: 1.4rem
+      &:before
+        width: 12vw
+        height: 12vw
+        left: -12vw
+        top: -8vw
