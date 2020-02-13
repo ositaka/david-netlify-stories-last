@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 import Swiper from 'react-id-swiper'
@@ -25,7 +26,13 @@ class StoriesRoll extends React.Component {
 				{posts &&
 					posts.map(({ node: post }) => (
 						<div key={post.id}>
-							<Link className="story-title" to={post.fields.slug}>
+							<AniLink
+								className="story-title"
+								cover
+								direction="right"
+								color="#000"
+								to={post.fields.slug}
+							>
 								{post.frontmatter.featuredimage ? (
 									<PreviewCompatibleImage
 										imageInfo={{
@@ -40,7 +47,7 @@ class StoriesRoll extends React.Component {
 									<h4>{post.frontmatter.title}</h4>
 									<p>{post.frontmatter.subtitle}</p>
 								</div>
-							</Link>
+							</AniLink>
 						</div>
 					))}
 			</Swiper>

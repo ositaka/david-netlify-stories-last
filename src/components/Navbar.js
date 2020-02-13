@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react'
 import scrollTo from 'gatsby-plugin-smoothscroll'
 import instagram from '../img/social/instagram.svg'

@@ -34,6 +34,7 @@
 }
 
 .story-title {
+	letter-spacing: 3px;
 	margin-top: 1.5rem;
 	margin-left: 4.25vw;
 	transition: all 300ms ease;

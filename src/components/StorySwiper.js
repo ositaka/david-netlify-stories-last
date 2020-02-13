@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 import Swiper from 'react-id-swiper'
@@ -23,7 +24,9 @@ const StorySwiper = ({ gallery }) => {
 
 	return (
 		<>
-			<a href="javascript:history.back()">Go Back</a>
+			<AniLink cover to="/#stories" bg="#000">
+				<h1>back</h1>
+			</AniLink>
 			<Swiper {...params}>
 				{gallery.map(image => (
 					<div key={image.title}>

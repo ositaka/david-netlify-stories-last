@@ -38,7 +38,9 @@ export const IndexPageTemplate = ({
 			<small>{tagline}</small>
 		</section>
 		<section id="inquiries" className="contact">
-			<h1 className="title">Business Inquiries</h1>
+			<h1 className="title">
+				Business <span>Inquiries</span>
+			</h1>
 			<h2 class="subtitle">{contactTitle}</h2>
 			<ContactForm />
 			<p>Contact me {email}</p>
