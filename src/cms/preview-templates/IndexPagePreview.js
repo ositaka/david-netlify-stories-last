@@ -10,7 +10,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 			<IndexPageTemplate
 				title={data.heroSwiper.title}
 				subtitle={data.heroSwiper.subtitle}
-				heroSwiper={data.heroSwiper}
+				heroSwiper={data.heroSwiper || { images: [] }}
 				biography={data.biography.text}
 				author={data.biography.author}
 				tagline={data.biography.tagline}
