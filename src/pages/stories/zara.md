@@ -1,5 +1,5 @@
 ---
-templateKey: 'story-gallery'
+templateKey: 'story-post'
 title: Zara
 subtitle: Koko, Portugal, 2019
 date: 2020-02-02T15:04:10.000Z

@@ -41,7 +41,7 @@ export const IndexPageTemplate = ({
 			<h1 className="title">
 				Business <span>Inquiries</span>
 			</h1>
-			<h2 class="subtitle">{contactTitle}</h2>
+			<h2 className="subtitle">{contactTitle}</h2>
 			<ContactForm />
 			<p>Contact me {email}</p>
 			<p>Follow me</p>

@@ -10,7 +10,8 @@ Under development
   - /stories
   - "lightbox" for gallery w/ react-id-swiper (StorySwiper.js)
   - StoryGallery.js
-  - page transition: https://transitionlink.tylerbarnes.ca/
+  - page transition
+    https://www.gatsbyjs.org/docs/adding-page-transitions-with-plugin-transition-link/
 - fixed blured images on slider-id-swiper
 - to do:
   - review navigation buttons
@@ -25,4 +26,4 @@ Under development
       - email (contact page)
       - facebook
       - instagram
-      - SEO Card
+      -

@@ -69,7 +69,7 @@ export default () => (
 			query StoriesRollQuery {
 				allMarkdownRemark(
 					sort: { order: DESC, fields: [frontmatter___date] }
-					filter: { frontmatter: { templateKey: { eq: "story-gallery" } } }
+					filter: { frontmatter: { templateKey: { eq: "story-post" } } }
 				) {
 					edges {
 						node {

@@ -1,5 +1,5 @@
 ---
-templateKey: 'story-gallery'
+templateKey: 'story-post'
 title: Úria
 subtitle: Úria, Praia da Ursa, 2019
 date: 2020-01-04T15:04:10.000Z
