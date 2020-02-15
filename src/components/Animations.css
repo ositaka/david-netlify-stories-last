@@ -1,19 +1,39 @@
+.navbar-menu,
 #home .hero * {
-	animation: fadeIn 900ms ease;
-	animation-delay: 30ms;
+	animation: fadeIn 900ms ease forwards;
+	animation-delay: 460ms;
+	opacity: 0;
+	position: relative;
+	transform: translateY(500%);
 }
+
+#home .hero .title {
+	animation: fadeIn 900ms ease forwards;
+	animation-delay: 820ms;
+}
+
+#home .hero .title-stroke {
+	animation: fadeIn 1360ms ease forwards;
+	animation-delay: 860ms;
+}
+
 #home .hero-swiper {
-	animation: fadeIn 1200ms ease;
-	animation-delay: 900ms;
+	animation: fadeIn 1800ms ease forwards;
+	animation-delay: 780ms;
+	opacity: 0;
+	position: relative;
+	transform: translateY(160%);
+}
+
+#home .swiper-pagination {
+	animation: fadeIn 2800ms ease forwards;
+	animation-delay: 120ms;
+	transform: translateY(60%);
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-		transform: translateY(30%), scale(110%);
-	}
 	to {
 		opacity: 1;
-		transform: translateY(0), scale(100%);
+		transform: translateY(0);
 	}
 }

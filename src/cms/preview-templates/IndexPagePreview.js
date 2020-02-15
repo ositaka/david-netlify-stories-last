@@ -8,14 +8,14 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 	if (data) {
 		return (
 			<IndexPageTemplate
-				title={data.heroSwiper.title}
-				subtitle={data.heroSwiper.subtitle}
-				heroSwiper={data.heroSwiper || { images: [] }}
-				biography={data.biography.text}
-				author={data.biography.author}
-				tagline={data.biography.tagline}
-				contactTitle={data.contact.title}
-				email={data.contact.email}
+				title={data.title}
+				subtitle={data.subtitle}
+				heroSwiper={data.slides || { images: [] }}
+				biography={data.text}
+				author={data.author}
+				tagline={data.tagline}
+				contactTitle={data.title}
+				email={data.email}
 				// intro={data.intro || { blurbs: [] }}
 			/>
 		)
@@ -28,7 +28,18 @@ IndexPagePreview.propTypes = {
 	entry: PropTypes.shape({
 		getIn: PropTypes.func
 	}),
-	getAsset: PropTypes.func
+	getAsset: PropTypes.func,
+
+	// heroSwiper: PropTypes.shape({
+	// 	title: PropTypes.string,
+	// 	subtitle: PropTypes.string,
+	// 	images: PropTypes.array
+	// }),
+	// biography: PropTypes.string,
+	// author: PropTypes.string,
+	// tagline: PropTypes.string,
+	// contactTitle: PropTypes.string,
+	// email: PropTypes.string
 }
 
 export default IndexPagePreview

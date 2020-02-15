@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import HeroSwiper from '../components/HeroSwiper'
 import StoriesRoll from '../components/StoriesRoll'
 import ContactForm from '../components/ContactForm'
+import '../components/Animations.css'
 import '../components/StoriesRoll.css'
 
 export const IndexPageTemplate = ({
