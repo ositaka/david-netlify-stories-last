@@ -1,0 +1,19 @@
+#home .hero * {
+	animation: fadeIn 900ms ease;
+	animation-delay: 30ms;
+}
+#home .hero-swiper {
+	animation: fadeIn 1200ms ease;
+	animation-delay: 900ms;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(30%), scale(110%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0), scale(100%);
+	}
+}
