@@ -20,7 +20,6 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "story-post"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime", hint: This is how you can order the stories on the website.}
       - {label: "Featured Image", name: "featuredimage", widget: image}
       - {label: Story Gallery, name: gallery, widget: object, fields: [
           {label: Images, name: images, widget: list, fields: [
@@ -29,6 +28,7 @@ collections:
             {label: Model, name: model, widget: string},
           ]}
         ]}
+      - {label: "Publish Date", name: "date", widget: "datetime", hint: This is how you can order the stories on the website.}
 
   - name: "pages"
     label: "Pages"

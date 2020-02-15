@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: David Alioth
-subtitle: Photography
 heroSwiper:
+  title: David Alioth
+  subtitle: Photography
   images:
     - image: /img/samuel-3.jpg
       title: First image on CMS

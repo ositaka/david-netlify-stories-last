@@ -50,9 +50,9 @@ export const IndexPageTemplate = ({
 )
 
 IndexPageTemplate.propTypes = {
-	title: PropTypes.string,
-	subtitle: PropTypes.string,
 	heroSwiper: PropTypes.shape({
+		title: PropTypes.string,
+		subtitle: PropTypes.string,
 		images: PropTypes.array
 	}),
 	biography: PropTypes.string,
@@ -68,8 +68,8 @@ const IndexPage = ({ data }) => {
 	return (
 		<Layout>
 			<IndexPageTemplate
-				title={frontmatter.title}
-				subtitle={frontmatter.subtitle}
+				title={frontmatter.heroSwiper.title}
+				subtitle={frontmatter.heroSwiper.subtitle}
 				heroSwiper={frontmatter.heroSwiper}
 				biography={frontmatter.biography.text}
 				author={frontmatter.biography.author}
@@ -95,9 +95,9 @@ export const pageQuery = graphql`
 	query IndexPageTemplate {
 		markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
 			frontmatter {
-				title
-				subtitle
 				heroSwiper {
+					title
+					subtitle
 					images {
 						image {
 							childImageSharp {
