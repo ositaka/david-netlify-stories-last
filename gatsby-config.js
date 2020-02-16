@@ -1,7 +1,10 @@
 module.exports = {
 	siteMetadata: {
 		title: 'David Alioth',
-		description: 'Photography'
+		description: 'Photography',
+		email: 'info@davidalioth.com',
+		facebook: '#',
+		instagram: 'https://www.instagram.com/the_davidalioth/'
 	},
 	plugins: [
 		'gatsby-plugin-react-helmet',
@@ -29,8 +32,8 @@ module.exports = {
 			}
 		},
 		'gatsby-plugin-sharp',
-		'gatsby-transformer-sharp',
 		'gatsby-plugin-transition-link',
+		'gatsby-transformer-sharp',
 		{
 			resolve: 'gatsby-transformer-remark',
 			options: {

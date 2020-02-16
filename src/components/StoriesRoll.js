@@ -6,6 +6,7 @@ import PreviewCompatibleImage from './PreviewCompatibleImage'
 
 import Swiper from 'react-id-swiper'
 import 'swiper/css/swiper.css'
+import './StoriesRoll.css'
 
 class StoriesRoll extends React.Component {
 	render() {
@@ -13,11 +14,19 @@ class StoriesRoll extends React.Component {
 		const { edges: posts } = data.allMarkdownRemark
 
 		const params = {
-			slidesPerView: 2,
 			loop: true,
 			speed: 900,
 			navigation: {
 				nextEl: '.swiper-button-next'
+			},
+			spaceBetween: 100,
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'fraction'
+			},
+			breakpoints: {
+				320: { slidesPerView: 1 },
+				640: { slidesPerView: 1.94 }
 			}
 		}
 
@@ -30,16 +39,15 @@ class StoriesRoll extends React.Component {
 								className="story-title"
 								cover
 								direction="right"
-								color="#000"
+								bg="#000"
+								duration={1}
 								to={post.fields.slug}
 							>
 								{post.frontmatter.featuredimage ? (
 									<PreviewCompatibleImage
 										imageInfo={{
 											image: post.frontmatter.featuredimage,
-											alt: `featured image thumbnail for storie ${
-												post.frontmatter.title
-											}`
+											alt: `featured image thumbnail for storie ${post.frontmatter.title}`
 										}}
 									/>
 								) : null}

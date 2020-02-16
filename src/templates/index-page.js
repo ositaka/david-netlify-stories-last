@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
+import Fade from 'react-reveal/Fade'
 
 import Layout from '../components/Layout'
 import HeroSwiper from '../components/HeroSwiper'
 import StoriesRoll from '../components/StoriesRoll'
 import ContactForm from '../components/ContactForm'
 import '../components/Animations.css'
-import '../components/StoriesRoll.css'
 
 export const IndexPageTemplate = ({
 	title,
@@ -16,8 +16,7 @@ export const IndexPageTemplate = ({
 	biography,
 	author,
 	tagline,
-	contactTitle,
-	email
+	contactTitle
 }) => (
 	<div>
 		<section id="home">
@@ -30,22 +29,28 @@ export const IndexPageTemplate = ({
 			</div>
 		</section>
 		<section id="stories">
-			<h1 className="title">Stories</h1>
-			<StoriesRoll />
+			<Fade bottom cascade>
+				<h1 className="title">Stories</h1>
+			</Fade>
+			<Fade right>
+				<StoriesRoll />
+			</Fade>
 		</section>
 		<section id="biography" className="section">
-			<blockquote>{biography}</blockquote>
-			<p>{author}</p>
-			<small>{tagline}</small>
+			<Fade bottom>
+				<blockquote>{biography}</blockquote>
+				<p>{author}</p>
+				<small>{tagline}</small>
+			</Fade>
 		</section>
 		<section id="inquiries" className="contact">
-			<h1 className="title">
-				Business <span>Inquiries</span>
-			</h1>
-			<h2 className="subtitle">{contactTitle}</h2>
-			<ContactForm />
-			<p>Contact me {email}</p>
-			<p>Follow me</p>
+			<Fade bottom cascade>
+				<h1 className="title">Business Inquiries</h1>
+			</Fade>
+			<Fade bottom>
+				<h2 className="subtitle">{contactTitle}</h2>
+				<ContactForm />
+			</Fade>
 		</section>
 	</div>
 )
@@ -59,8 +64,7 @@ IndexPageTemplate.propTypes = {
 	biography: PropTypes.string,
 	author: PropTypes.string,
 	tagline: PropTypes.string,
-	contactTitle: PropTypes.string,
-	email: PropTypes.string
+	contactTitle: PropTypes.string
 }
 
 const IndexPage = ({ data }) => {
@@ -76,7 +80,6 @@ const IndexPage = ({ data }) => {
 				author={frontmatter.biography.author}
 				tagline={frontmatter.biography.tagline}
 				contactTitle={frontmatter.contact.title}
-				email={frontmatter.contact.email}
 			/>
 		</Layout>
 	)
@@ -117,7 +120,6 @@ export const pageQuery = graphql`
 				}
 				contact {
 					title
-					email
 				}
 			}
 		}

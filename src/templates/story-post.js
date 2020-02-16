@@ -4,10 +4,11 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 // import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import StorySwiper from '../components/StorySwiper'
+import '../components/StorySwiper.css'
 
 export const StoryGalleryTemplate = ({ helmet, gallery }) => {
 	return (
-		<section className="">
+		<section className="story-post">
 			{helmet || ''}
 			<StorySwiper gallery={gallery} />
 		</section>

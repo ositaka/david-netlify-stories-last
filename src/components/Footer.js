@@ -1,31 +1,39 @@
 import React from 'react'
-import facebook from '../img/social/facebook.svg'
-import instagram from '../img/social/instagram.svg'
+import facebookIcon from '../img/social/facebook.svg'
+import instagramIcon from '../img/social/instagram.svg'
+import useSiteMetadata from './SiteMetadata'
+import Fade from 'react-reveal/Fade'
 
-const Footer = class extends React.Component {
-	render() {
+const Footer = () => {
+	const { email, facebook, instagram } = useSiteMetadata()
+
 		return (
-			<footer className="footer has-background-black has-text-white-ter">
-				<div className="content has-text-centered">Contact me: Email</div>
-				<div className="content has-text-centered social">
-					<a title="facebook" href="https://facebook.com">
-						<img
-							src={facebook}
-							alt="Facebook"
-							style={{ width: '1em', height: '1em' }}
-						/>
-					</a>
-					<a title="instagram" href="https://instagram.com">
-						<img
-							src={instagram}
-							alt="Instagram"
-							style={{ width: '1em', height: '1em' }}
-						/>
-					</a>
-				</div>
+			<footer className="footer">
+				<Fade bottom>
+					<div className="content">
+						<span>Contact me</span>
+						<a href={`mailto: ${email}`}>{email}</a>
+					</div>
+					<div className="content social">
+						<span>Follow me</span>
+						<a title="facebook" href={`${facebook}`}>
+							<img
+								src={facebookIcon}
+								alt="Facebook"
+								style={{ width: '1em', height: '1em' }}
+							/>
+						</a>
+						<a title="instagram" href={`${instagram}`}>
+							<img
+								src={instagramIcon}
+								alt="Instagram"
+								style={{ width: '1em', height: '1em' }}
+							/>
+						</a>
+					</div>
+				</Fade>
 			</footer>
 		)
-	}
 }
 
 export default Footer

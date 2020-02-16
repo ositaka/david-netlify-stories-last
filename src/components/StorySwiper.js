@@ -5,6 +5,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 import Swiper from 'react-id-swiper'
 import 'swiper/css/swiper.css'
+import './StorySwiper.css'
 
 const StorySwiper = ({ gallery }) => {
 	const params = {
@@ -12,7 +13,13 @@ const StorySwiper = ({ gallery }) => {
 		loop: true,
 		speed: 900,
 		autoplay: {
-			delay: 12000,
+			//
+			//
+			// TESTTTT
+			delay: 120000,
+			//
+			//
+			//
 			disableOnInteraction: false
 		},
 
@@ -24,15 +31,17 @@ const StorySwiper = ({ gallery }) => {
 
 	return (
 		<>
-			<AniLink cover to="/#stories" bg="#000">
+			<AniLink cover direction="left" to="/#stories" className="close-story" bg="#000" duration={1}>
 				<h1>back</h1>
 			</AniLink>
-			<Swiper {...params}>
+			<Swiper id="StorySwiper" {...params}>
 				{gallery.map(image => (
 					<div key={image.title}>
 						<PreviewCompatibleImage imageInfo={image} />
-						<h4>{image.title}</h4>
-						<p>{image.model}</p>
+						<div className="story-title">
+							<h4>{image.title}</h4>
+							<p>{image.model}</p>
+						</div>
 					</div>
 				))}
 			</Swiper>

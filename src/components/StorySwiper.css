@@ -1,0 +1,98 @@
+section.story-post {
+    /* display: flex!important;
+    align-items: center; */
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.story-post .story-title {
+	letter-spacing: 3px;
+	margin-top: 1.5rem;
+    transition: all 300ms ease;
+    position: absolute;
+    bottom: 3rem;
+    left: 1.5rem;
+}
+
+.story-post .swiper-slide {
+    height: 100vh;
+}
+
+.story-post .swiper-slide-active .story-title {
+    animation: title 2.2s ease;
+}
+
+.story-post .swiper-slide-active .story-title p {
+    animation: title 2s ease;
+	animation-delay: 160ms;
+}
+
+.story-post .swiper-slide {
+	transition: all 800ms ease;
+	opacity: 0.35;
+}
+
+.story-post .swiper-slide-active {
+	transition: all 1200ms ease;
+	padding: 0;
+	opacity: 1;
+}
+
+.story-post .swiper-slide-prev {
+	transform: translateX(-60%);
+}
+
+.story-post .swiper-slide-next {
+	transform: translateX(30%);
+}
+
+.story-post .swiper-slide {
+    animation: slideInImage 900ms ease forwards;
+    animation-delay: 300ms;
+    padding-right: 30%;
+}
+
+.story-post .gatsby-image-wrapper {
+    animation: fadeInImage 900ms ease forwards;
+    animation-delay: 300ms;
+    opacity: 0;
+}
+
+.story-post .gatsby-image-wrapper > div {
+    height: 100vh;
+}
+
+.story-post .gatsby-image-wrapper img {
+    object-fit: contain!important;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.story-post .close-story {
+    position: fixed;
+    top: 1.5rem;
+    left: 1.5rem;
+    z-index: 11;
+}
+
+@keyframes title {
+    from {
+        transform: translateX(50%)
+	}
+	to {
+        transform: translateX(0)
+	}
+}
+
+@keyframes fadeInImage {
+    to {
+        opacity: 1;
+	}
+}
+
+@keyframes slideInImage {
+    to {
+        padding-right: 0;
+	}
+}

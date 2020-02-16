@@ -67,13 +67,9 @@ footer.footer
 .menu-list
   list-style: none !important
   text-align: left
-.social
-  padding: 2em
 .social a
-    padding: .5em .5em .3em .5em
+    padding: .5em
     border-radius: 1em
-    background-color: $white-ter
-    margin: .5em
     width: 1em
     height: 1em
     vertical-align: middle
@@ -147,9 +143,11 @@ section
   margin-bottom: -12.9vw
   z-index: 1
 .hero,
-.contact
+.contact,
+footer .content
   padding-left: 12%
   padding-right: 12%
+  margin-bottom: unset!important
 
 .hero
   margin-top: 5vw
@@ -172,19 +170,22 @@ section
 
 #home
   overflow: hidden
+  margin-bottom: 12vw
 
 #stories
   .title
     font-size: 8vw
-    z-index: 0
+    margin-bottom: -3rem
+    z-index: 1
   a 
     color: white
-  .story-title
-    text-transform: uppercase
   h4
     font-weight: bold
   p
     font-size: .8rem
+  
+.story-title
+  text-transform: uppercase
       
 #biography
   padding: 25vw 30vw
@@ -215,13 +216,14 @@ section
     opacity: .3
 
 .contact
-  width: 62vw
-  margin-bottom: 12vw
+  width: 63vw
+  padding-bottom: 12vw
+  overflow: hidden
   .title
     font-size: 8vw
     line-height: 102%
     margin-bottom: 13.5vw
-    span
+    div
       letter-spacing: 4px
   .subtitle
     font-size: 3.3vw
@@ -267,6 +269,25 @@ section
     height: unset
     box-shadow: none
 
+footer
+  display: flex
+  flext-direction: row
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 7.5vw
+  letter-spacing: 4.5px
+  text-transform: uppercase
+  span
+    font-size: .85vw
+    margin-right: 2vw
+    opacity: .8
+  a
+    font-size: 1.1vw
+    opacity: .8
+    color: white!important
+    &:hover
+      opacity: 1
+
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
@@ -291,3 +312,5 @@ section
         height: 12vw
         left: -12vw
         top: -8vw
+  .contact form
+    width: 74vw

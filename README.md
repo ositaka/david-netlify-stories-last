@@ -3,8 +3,7 @@
 Under development
 
 - currently:
-
-  - finishing contact form
+  - review sitemetada on CMS
 
 - added:
   - /stories
@@ -12,6 +11,7 @@ Under development
   - StoryGallery.js
   - page transition
     https://www.gatsbyjs.org/docs/adding-page-transitions-with-plugin-transition-link/
+  - contact form
 - fixed blured images on slider-id-swiper
 - to do:
   - review navigation buttons
