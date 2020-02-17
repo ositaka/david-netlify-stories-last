@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  # name: test-repo
+  # name: git-gateway
+  name: test-repo
   branch: master
   commit_messages:
     create: 'Create {{collection}} “{{slug}}”'
@@ -14,10 +14,11 @@ public_folder: /img
 
 media_library:
   name: cloudinary
-  output_filename_only: true
+  output_filename_only: false
   config:
     cloud_name: ositaka
     api_key: 357997194187673
+    output_filename_only: true
 
 collections:
   - name: "stories"
