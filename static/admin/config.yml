@@ -12,6 +12,12 @@ backend:
 media_folder: static/img
 public_folder: /img
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: ositaka
+    api_key: 357997194187673
+
 collections:
   - name: "stories"
     editor:
