@@ -14,6 +14,7 @@ public_folder: /img
 
 media_library:
   name: cloudinary
+  output_filename_only: true
   config:
     cloud_name: ositaka
     api_key: 357997194187673
