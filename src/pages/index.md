@@ -12,9 +12,9 @@ heroSwiper:
       title: Slideshow 3
 biography:
   text: >-
-    This is how I describe myself, something about my roots and my intentions. I focus on this and that and my passion is this and that. A short nice text that describes people need to know about me as photographer.
-  author: David Alioth
-  tagline: Something you want to add
+    What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.
+  author: Karl Lagerfeld
+  tagline: Designer, Artist, Photographer
 contact:
   title: Interested in working with me?
 ---
