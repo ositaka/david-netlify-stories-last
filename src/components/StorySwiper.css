@@ -69,6 +69,18 @@ section.story-post {
     max-height: 100vh;
 }
 
+.story-post .swiper-pagination span {
+    padding: 3.5px;
+    background: transparent;
+    border: 1px solid white;
+    opacity: .5;
+}
+
+span.swiper-pagination-bullet-active {
+    background: white!important;
+    border: none;
+}
+
 .story-post .close-story {
     position: fixed;
     top: 1.5rem;

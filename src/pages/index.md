@@ -4,12 +4,12 @@ heroSwiper:
   title: David Alioth
   subtitle: Photography
   images:
-    - image: /img/samuel-3.jpg
-      title: First image on CMS
-    - image: /img/zara-3.jpg
-      title: Another Photo
-    - image: /img/space-shot-3.jpg
-      title: Space Shot
+    - image: /img/slideshow-1.jpg
+      title: Slideshow 1
+    - image: /img/slideshow-2.jpg
+      title: Slideshow 2
+    - image: /img/slideshow-3.jpg
+      title: Slideshow 3
 biography:
   text: >-
     This is how I describe myself, something about my roots and my intentions. I focus on this and that and my passion is this and that. A short nice text that describes people need to know about me as photographer.
@@ -17,5 +17,4 @@ biography:
   tagline: Something you want to add
 contact:
   title: Interested in working with me?
-  email: info@davidalioth.com
 ---

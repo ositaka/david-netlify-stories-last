@@ -3,7 +3,9 @@
 Under development
 
 - currently:
+  - adding cloudinary support
   - review sitemetada on CMS
+  - key.title -> replace by key.id
 
 - added:
   - /stories

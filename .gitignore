@@ -6,4 +6,9 @@ node_modules
 public/
 static/admin/*.bundle.*
 .DS_Store
+# Yarn 
 yarn-error.log
+.yarn-integrity
+.env.*
+!.env.EXAMPLE
+.netlify

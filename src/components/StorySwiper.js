@@ -10,16 +10,10 @@ import './StorySwiper.css'
 const StorySwiper = ({ gallery }) => {
 	const params = {
 		slidesPerView: 1,
-		loop: true,
+		loop: false,
 		speed: 900,
 		autoplay: {
-			//
-			//
-			// TESTTTT
-			delay: 120000,
-			//
-			//
-			//
+			delay: 12000,
 			disableOnInteraction: false
 		},
 
