@@ -19,6 +19,7 @@ class StoriesRoll extends React.Component {
 			navigation: {
 				nextEl: '.swiper-button-next'
 			},
+			lazy: true,
 			spaceBetween: 100,
 			pagination: {
 				el: '.swiper-pagination',
