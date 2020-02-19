@@ -70,7 +70,6 @@ module.exports = {
 			options: {
 				precachePages: [`/stories/*`],
         		globPatterns: ['**/*.{js,jpg,html,css}'],
-      },
 			}
 		},
 		{
