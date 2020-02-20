@@ -1,5 +1,5 @@
 @import "~bulma/sass/utilities/initial-variables"
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap')
 
 
 .navbar .navbar-menu
@@ -77,13 +77,13 @@ footer.footer
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #d6400033;
+  background-color: #d6400033
 .blog-list-item header
-  display: flex;
-  margin-bottom: 1em;
+  display: flex
+  margin-bottom: 1em
 .blog-list-item .featured-thumbnail
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
+  flex-basis: 35%
+  margin: 0 1.5em 0 0
 
 
 @import "~bulma"
@@ -179,13 +179,15 @@ footer .content
     z-index: 1
   a 
     color: white
-  h4
-    font-weight: bold
-  p
-    font-size: .8rem
   
 .story-title
   text-transform: uppercase
+  letter-spacing: 5px
+  h4
+    font-weight: bold
+    font-size: 1.2rem
+  p
+    font-size: 1rem
       
 #biography
   padding: 25vw 30vw
@@ -195,7 +197,7 @@ footer .content
     &:before
       background: url(../img/quote-mark.svg) center no-repeat
       background-size: contain
-      content: '';
+      content: ''
       display: block
       height: 6.71vw
       width: 6.71vw
@@ -288,18 +290,44 @@ footer
     &:hover
       opacity: 1
 
+.swiper-button-next:after,
+.swiper-button-prev:after
+	display: none
+.swiper-button-next,
+.swiper-button-prev 
+.swiper-button-prev:before 
+	content: 'PREV'
+.swiper-button-next:before 
+  content: 'NEXT'
+
+.swiper-button-prev:before,
+.swiper-button-next:before 
+	font-size: 1rem
+	color: white!important
+	letter-spacing: 5px
+    color: white
+    display: inline-block
+    position: relative
+	opacity: .35
+	transition: all 300ms
+  
+.swiper-button-prev:hover:before,
+.swiper-button-next:hover:before 
+	opacity: 1
+
+
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
-    flex-basis: 50%;
+    flex-basis: 50%
 
 +mobile
   .blog-list-item header
     display: block
   .blog-list-item .featured-thumbnail
-    text-align: center;
-    max-width: 70%;
-    margin: 0 0 1em;
+    text-align: center
+    max-width: 70%
+    margin: 0 0 1em
   .title-stroke
     -webkit-text-stroke-width: 1px
   #biography

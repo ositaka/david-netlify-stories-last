@@ -17,6 +17,7 @@ class StoriesRoll extends React.Component {
 			loop: true,
 			speed: 900,
 			navigation: {
+				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next'
 			},
 			lazy: true,

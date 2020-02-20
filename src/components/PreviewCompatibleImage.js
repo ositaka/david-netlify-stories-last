@@ -17,11 +17,13 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
 				loading="eager"
 				imgStyle={{
 					opacity: 1,
-					transition: 'all 600ms ease'
+					transition: 'all 600ms ease',
+					backgroundColor: 'rgba(0,0,0,.3)',
 				}}
 				placeholderStyle={{
 					opacity: 0,
-					transition: 'all 600ms ease'
+					transition: 'all 600ms ease',
+					backgroundColor: 'rgba(0,0,0,.3)' 
 				}}
 			/>
 		)

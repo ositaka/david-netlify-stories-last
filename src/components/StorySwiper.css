@@ -11,8 +11,8 @@ section.story-post {
 	margin-top: 1.5rem;
     transition: all 300ms ease;
     position: absolute;
-    bottom: 3rem;
-    left: 1.5rem;
+    bottom: 3vw;
+    opacity: .95;
 }
 
 .story-post .swiper-slide {
@@ -67,6 +67,8 @@ section.story-post {
     object-fit: contain!important;
     max-width: 100vw;
     max-height: 100vh;
+    background-color: transparent!important;
+
 }
 
 .story-post .swiper-pagination span {
@@ -81,10 +83,28 @@ span.swiper-pagination-bullet-active {
     border: none;
 }
 
+.story-post .swiper-button-next,
+.story-post .swiper-button-prev {
+    z-index: 1;
+}
+
+.story-post .swiper-button-next:before,
+.story-post .swiper-button-prev:before {
+    bottom: 3vw;
+    position: fixed;
+}
+
+.story-post .swiper-button-next:before {
+    right: 4vw;
+}
+.story-post .swiper-button-prev:before {
+    right: 9vw;
+}
+
 .story-post .close-story {
     position: fixed;
-    top: 1.5rem;
-    left: 1.5rem;
+    top: calc(3vw - 4px);
+    left:calc(4vw - 4px);
     z-index: 11;
 }
 

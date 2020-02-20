@@ -6,6 +6,7 @@ import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 import Swiper from 'react-id-swiper'
 import 'swiper/css/swiper.css'
 import './StorySwiper.css'
+import Close from '../img/close.svg'
 
 const StorySwiper = ({ gallery }) => {
 	const params = {
@@ -16,7 +17,10 @@ const StorySwiper = ({ gallery }) => {
 			delay: 12000,
 			disableOnInteraction: false
 		},
-
+		navigation: {
+			prevEl: '.swiper-button-prev',
+			nextEl: '.swiper-button-next'
+		},
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true
@@ -25,8 +29,19 @@ const StorySwiper = ({ gallery }) => {
 
 	return (
 		<>
-			<AniLink cover direction="left" to="/#stories" className="close-story" bg="#000" duration={1}>
-				<h1>back</h1>
+			<AniLink
+				cover
+				direction="left"
+				to="/#stories"
+				className="close-story"
+				bg="#000"
+				duration={1}
+			>
+				<img
+					src={Close}
+					alt="Close this story"
+					style={{ width: '1.75em', height: '1.75em' }}
+				/>
 			</AniLink>
 			<Swiper id="StorySwiper" {...params}>
 				{gallery.map(image => (
