@@ -77,7 +77,7 @@
 
 #stories .swiper-pagination-current {
     margin-right: -1rem;
-    background: #1e252c; /* fix for swiper */
+    background: #0a0d0f; /* fix for swiper */
     padding: 0 .5rem;
     position: relative;
 }

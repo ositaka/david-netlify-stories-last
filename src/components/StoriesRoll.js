@@ -16,6 +16,7 @@ class StoriesRoll extends React.Component {
 		const params = {
 			loop: true,
 			speed: 900,
+			grabCursor: true,
 			navigation: {
 				prevEl: '.swiper-button-prev',
 				nextEl: '.swiper-button-next'
@@ -28,6 +29,10 @@ class StoriesRoll extends React.Component {
 			breakpoints: {
 				320: { slidesPerView: 1 },
 				640: { slidesPerView: 1.94 }
+			},
+			keyboard: {
+				enabled: true,
+				onlyInViewport: true
 			}
 		}
 

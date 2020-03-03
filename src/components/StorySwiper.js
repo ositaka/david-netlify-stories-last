@@ -13,6 +13,8 @@ const StorySwiper = ({ gallery }) => {
 		slidesPerView: 1,
 		loop: false,
 		speed: 900,
+		grabCursor: true,
+		preloadImages: false,
 		autoplay: {
 			delay: 12000,
 			disableOnInteraction: false
@@ -24,6 +26,10 @@ const StorySwiper = ({ gallery }) => {
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true
+		},
+		keyboard: {
+			enabled: true,
+			onlyInViewport: false
 		}
 	}
 

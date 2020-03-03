@@ -88,6 +88,10 @@ span.swiper-pagination-bullet-active {
     z-index: 1;
 }
 
+.story-post .swiper-button-next {
+    right: -100px;
+}
+
 .story-post .swiper-button-next:before,
 .story-post .swiper-button-prev:before {
     bottom: 3vw;
