@@ -2,7 +2,7 @@
 templateKey: story-post
 title: Yuri
 subtitle: 'Talent: Yuri'
-featuredimage: /img/yuri-cover - Copy.jpg
+featuredimage: /img/yuri-cover.jpg
 date: 2020-02-13T23:19:21.879Z
 gallery:
   images:
