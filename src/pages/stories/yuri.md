@@ -6,14 +6,14 @@ featuredimage: /img/yuri-cover - Copy.jpg
 date: 2020-02-13T23:19:21.879Z
 gallery:
   images:
-    - image: /img/yuri-3 - Copy.jpg
+    - image: /img/yuri-1.jpg
       model: 'Talent: Yuri'
-      title: Yuri 3
-    - image: /img/yuri-1 - Copy.jpg
+      title: Yuri
+    - image: /img/yuri-2.jpg
       model: 'Talent: Yuri'
-      title: Yuri 1
-    - image: /img/yuri-2 - Copy.jpg
+      title: Yuri
+    - image: /img/yuri-3.jpg
       model: 'Talent: Yuri'
-      title: Yuri 2
+      title: Yuri
 ---
 
