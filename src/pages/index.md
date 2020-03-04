@@ -1,16 +1,20 @@
 ---
 templateKey: index-page
 heroSwiper:
-  title: David Alioth
-  subtitle: Photography
   images:
     - image: /img/slideshow-1.jpg
       title: Slideshow 1
+    - image: /img/slideshow-2.jpg
+      title: Space Girl
+  subtitle: Photography
+  title: David Alioth
 biography:
-  text: >-
-    What I like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.
   author: Karl Lagerfeld
-  tagline: Designer, Artist, Photographer
+  tagline: 'Designer, Artist, Photographer'
+  text: >-
+    What I like about photographs is that they capture a moment that’s gone
+    forever, impossible to reproduce.
 contact:
   title: Interested in working with me?
 ---
+
