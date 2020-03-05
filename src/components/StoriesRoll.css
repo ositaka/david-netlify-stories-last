@@ -142,9 +142,10 @@
 
 @media (min-width: 320px) and (max-width: 480px) {
     #home .swiper-slide {
-        height: 50vh;
-        top: 1.5vh;
-        margin-bottom: 20vh;
-    }
-  
+		height: 50vh;
+        margin-bottom: 10vh;
+	}
+	#home .swiper-pagination {
+		display: none!important;
+	}
 }

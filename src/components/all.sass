@@ -1,9 +1,10 @@
-@import "~bulma/sass/utilities/initial-variables"
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap')
 
 
 .navbar .navbar-menu
-  box-shadow:none !important
+  display: block
+  box-shadow: none!important
+  background: none!important
 
 // Helper Classes
 .full-width-image-container
@@ -70,16 +71,6 @@ footer.footer
 .social a
     vertical-align: middle
     display: inline
-
-// blog roll
-.blog-list-item.is-featured
-  background-color: #d6400033
-.blog-list-item header
-  display: flex
-  margin-bottom: 1em
-.blog-list-item .featured-thumbnail
-  flex-basis: 35%
-  margin: 0 1.5em 0 0
 
 
 @import "~bulma"
@@ -317,20 +308,65 @@ footer
   
 
 +mobile
-  .title
-    font-size: 12.2vw
-  .title-stroke
-    font-size: 11.1vw
-    -webkit-text-stroke-width: 1px
+  .navbar
+    margin-top: 1.25rem
+    .navbar-brand,
+    .navbar-start
+      display: none
+    .navbar-end
+      display: flex
+      justify-content: space-between
+      .navbar-item
+        font-size: 1rem
+        opacity: 1
+        padding: 0
+  .navbar .container,
+  section:not(#home),
+  .hero
+    width: calc(100% - 3.5rem)!important
+    padding-left: 0!important
+    padding-right: 0!important
+    margin-left: 1.75rem!important
+    margin-right: 1.75rem!important
+  .contact form,
+  footer
+    width: 100%!important
+    margin: 0!important
+  #home
+    .title
+      font-size: 18vw
+      line-height: 1
+      margin-top: 2rem
+    .title-stroke
+      font-size: 11.5vw
+      -webkit-text-stroke-width: 1px
+      top: -8.2vw
+  #stories .title,
+  .contact .title
+    font-size: 18vw
+  #stories
+    .title
+      position: unset!important
+      transform: unset!important
+      margin-bottom: 20vw
+    .story-title
+      margin-left: 0!important
+  .contact
+    .subtitle
+      font-size: 9vw
+    .button
+      padding: 4vw 8vw
   #biography
-    padding-left: 20vw
-    padding-right: 20vw
     blockquote
       font-size: 1.4rem
+      text-align: right
+      letter-spacing: 2px
       &:before
-        width: 12vw
-        height: 12vw
-        left: -12vw
-        top: -8vw
-  .contact form
-    width: 74vw
+        width: 20vw
+        height: 16vw
+        position: relative
+        left: 4vw
+        top: -4vw
+  .contact
+    .subtitle
+      margin: 10vw 0

@@ -7,7 +7,7 @@ heroSwiper:
     - image: /img/slideshow-2.jpg
       title: Space Girl
   title: David Alioth
-  subtitle1: 'Photographer &'
+  subtitle1: 'Photographer'
   subtitle2: 'Creative Director'
 biography:
   author: Karl Lagerfeld
