@@ -1,10 +1,10 @@
 .navbar-menu,
-#home .hero * {
+#home .hero > * {
 	animation: fadeIn 900ms ease forwards;
 	animation-delay: 460ms;
 	opacity: 0;
 	position: relative;
-	transform: translateY(500%);
+	transform: translateY(100vh);
 }
 
 #home .hero .title {

@@ -1,3 +1,29 @@
+#home .title-stroke span {
+	display: inline-block;
+	position: absolute;
+    top: -1.5vw;
+}
+
+#home .subtitle1,
+#home .subtitle2 {
+	animation: title-rotator 8s linear infinite;
+	opacity: 0;
+}
+
+#home .subtitle2 {
+	animation-delay: 4s;
+	opacity: 0;
+}
+
+@keyframes title-rotator {
+	0% { opacity: 0; }
+	10% { opacity: 1; }
+	50% { opacity: 1; }
+	60% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+
 #home .swiper-slide {
 	height: 100vh;
 	display: grid;
