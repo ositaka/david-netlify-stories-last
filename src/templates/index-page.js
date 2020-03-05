@@ -29,7 +29,7 @@ export const IndexPageTemplate = ({
 									<TypeIt
 										options={{
 											loop: true,
-											speed: 0,
+											speed: 20,
 											cursor: false,
 										}}
 										getBeforeInit={instance => {
