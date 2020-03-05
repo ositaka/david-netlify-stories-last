@@ -179,6 +179,7 @@ footer .content
 .story-title
   text-transform: uppercase
   letter-spacing: 5px
+  width: 88%
   h4
     font-weight: bold
     font-size: 1.2rem
@@ -306,7 +307,7 @@ footer
     display: inline-block
     position: relative
 	opacity: .35
-	transition: all 300ms
+	transition: all .35s ease
   
 .swiper-button-prev:hover:before,
 .swiper-button-next:hover:before 
@@ -315,17 +316,13 @@ footer
 
 // responsiveness
 +tablet-only
-  .blog-list-item .featured-thumbnail
-    flex-basis: 50%
+  
 
 +mobile
-  .blog-list-item header
-    display: block
-  .blog-list-item .featured-thumbnail
-    text-align: center
-    max-width: 70%
-    margin: 0 0 1em
+  .title
+    font-size: 12.2vw
   .title-stroke
+    font-size: 11.1vw
     -webkit-text-stroke-width: 1px
   #biography
     padding-left: 20vw

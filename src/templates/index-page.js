@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Fade from 'react-reveal/Fade'
+import TypeIt from 'typeit-react'
 
 import Layout from '../components/Layout'
 import HeroSwiper from '../components/HeroSwiper'
@@ -10,50 +11,73 @@ import ContactForm from '../components/ContactForm'
 import '../components/Animations.css'
 
 export const IndexPageTemplate = ({
-	title,
-	subtitle,
-	heroSwiper,
-	biography,
-	author,
-	tagline,
-	contactTitle
-}) => (
-	<div>
-		<section id="home">
-			<div className="hero">
-				<h1 className="title">{title}</h1>
-				<h2 className="title title-stroke">{subtitle}</h2>
-			</div>
-			<div className="hero-swiper">
-				<HeroSwiper slides={heroSwiper.images} />
-			</div>
-		</section>
-		<section id="stories">
-			<Fade bottom cascade>
-				<h1 className="title">Stories</h1>
-			</Fade>
-			<Fade right>
-				<StoriesRoll />
-			</Fade>
-		</section>
-		<section id="biography" className="section">
-			<Fade bottom>
-				<blockquote>{biography}</blockquote>
-				<p>{author}</p>
-				<small>{tagline}</small>
-			</Fade>
-		</section>
-		<section id="inquiries" className="contact">
-			<Fade bottom cascade>
-				<h1 className="title">Business Inquiries</h1>
-			</Fade>
-			<Fade bottom>
-				<h2 className="subtitle">{contactTitle}</h2>
-				<ContactForm />
-			</Fade>
-		</section>
-	</div>
-)
+					title,
+					subtitle,
+					heroSwiper,
+					biography,
+					author,
+					tagline,
+					contactTitle
+				}) => (
+					<div>
+						<section id="home">
+							<div className="hero">
+								<h1 className="title">{title}</h1>
+								<h2 className="title title-stroke">
+									{/* {subtitleText1}
+									{subtitleText2} */}
+									<TypeIt
+										options={{
+											loop: true,
+											speed: 0,
+											cursor: false,
+										}}
+										getBeforeInit={instance => {
+											instance
+												.type('Photographer &')
+												.pause(2600)
+												.delete()
+												.pause(100)
+												.type('Creative Director')
+												.pause(2600)
+												.delete()
+
+											// Remember to return it!
+											return instance
+										}}
+									/>
+								</h2>
+							</div>
+							<div className="hero-swiper">
+								<HeroSwiper slides={heroSwiper.images} />
+							</div>
+						</section>
+						<section id="stories">
+							<Fade bottom cascade>
+								<h1 className="title">Stories</h1>
+							</Fade>
+							<Fade right>
+								<StoriesRoll />
+							</Fade>
+						</section>
+						<section id="biography" className="section">
+							<Fade bottom>
+								<blockquote>{biography}</blockquote>
+								<p>{author}</p>
+								<small>{tagline}</small>
+							</Fade>
+						</section>
+						<section id="inquiries" className="contact">
+							<Fade bottom cascade>
+								<h1 className="title">Business Inquiries</h1>
+							</Fade>
+							<Fade bottom>
+								<h2 className="subtitle">{contactTitle}</h2>
+								<ContactForm />
+							</Fade>
+						</section>
+					</div>
+				)
 
 IndexPageTemplate.propTypes = {
 	heroSwiper: PropTypes.shape({

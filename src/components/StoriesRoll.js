@@ -33,6 +33,10 @@ class StoriesRoll extends React.Component {
 			keyboard: {
 				enabled: true,
 				onlyInViewport: true
+			},
+			a11y: {
+				prevSlideMessage: 'Previous slide',
+				nextSlideMessage: 'Next slide'
 			}
 		}
 

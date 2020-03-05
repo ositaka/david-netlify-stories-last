@@ -75,25 +75,9 @@
 	top: 6vw;
 }
 
-#stories .swiper-pagination-current {
-    margin-right: -1rem;
-    background: #0a0d0f; /* fix for swiper */
-    padding: 0;
-    position: relative;
-}
-
-#stories .swiper-pagination-total:before {
-    content: '';
-    border-bottom: 1px solid white;
-    width: 4vw;
-    display: inline-block;
-    margin-right: 1rem;
-    position: relative;
-    top: -5px;
-}
-
 #stories .swiper-pagination-fraction {
-	width: 89vw;
+	width: 95vw;
+	bottom: 50px;
 }
 
 @keyframes title-delay {
@@ -112,4 +96,29 @@
 	100% {
 		transform: translateX(0);
 	}
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #home .swiper-slide {
+        height: 50vh;
+        top: 1.5vh;
+        margin-bottom: 20vh;
+    }
+  
 }

@@ -30,6 +30,11 @@ const StorySwiper = ({ gallery }) => {
 		keyboard: {
 			enabled: true,
 			onlyInViewport: false
+		},
+		mousewheel: true,
+		a11y: {
+			prevSlideMessage: 'Previous slide',
+			nextSlideMessage: 'Next slide'
 		}
 	}
 

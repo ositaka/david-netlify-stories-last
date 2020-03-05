@@ -68,7 +68,6 @@ section.story-post {
     max-width: 100vw;
     max-height: 100vh;
     background-color: transparent!important;
-
 }
 
 .story-post .swiper-pagination span {
@@ -86,6 +85,16 @@ span.swiper-pagination-bullet-active {
 .story-post .swiper-button-next,
 .story-post .swiper-button-prev {
     z-index: 1;
+    transition: all .35s ease;
+}
+
+.story-post .swiper-button-next:before,
+.story-post .swiper-button-prev:before {
+    opacity: 1;
+}
+
+.story-post .swiper-button-prev {
+    left: -100px;
 }
 
 .story-post .swiper-button-next {
