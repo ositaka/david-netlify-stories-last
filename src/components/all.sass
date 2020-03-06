@@ -47,7 +47,12 @@
 * 
   font-family: 'Roboto Condensed', sans-serif!important
   outline: none
-  
+  -webkit-tap-highlight-color: transparent
+
+input:-webkit-autofill
+  -webkit-box-shadow: 0 0 0px 100px #0a0d0f inset !important
+  -webkit-text-fill-color: white!important
+
 html,
 body
   color: white
@@ -403,7 +408,7 @@ main // fake shadow for footer
     margin-bottom: 6rem!important
     padding-bottom: 3.5rem!important
     .content
-      padding: 1.75rem
+      padding: 1.75rem 0
       span
         display: block
   .story-post
