@@ -141,3 +141,17 @@ span.swiper-pagination-bullet-active {
         padding-right: 0;
 	}
 }
+
+
+@media (max-width: 768px) {
+    .story-post .swiper-button-prev::before,
+    .story-post .swiper-button-next::before {
+        display: none;
+    }
+}
+
+@media (max-width: 1280px) {
+    .story-post .swiper-button-prev::before{
+        right: 12.5vw;
+    }
+}

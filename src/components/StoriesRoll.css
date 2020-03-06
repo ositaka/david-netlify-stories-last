@@ -125,20 +125,6 @@
 }
 
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
 
 @media (min-width: 320px) and (max-width: 480px) {
     #home .swiper-slide {
@@ -147,5 +133,43 @@
 	}
 	#home .swiper-pagination {
 		display: none!important;
+	}
+	#stories .swiper-container {
+		padding-top: 28vw;
+	} 
+	#stories .swiper-button-next,
+	#stories .swiper-button-prev {
+		height: 24%;
+		top: 0;
+	}
+	#stories .swiper-button-prev:before {
+    	left: 5vw;
+	}
+	#stories .swiper-button-next:before {
+    	left: -40vw;
+	}
+	#stories .swiper-pagination {
+		width: auto;
+		text-align: right;
+		position: absolute;
+		right: 0;
+		top: 119.3vw;
+		z-index: 0;
+	}
+	#stories .gatsby-image-wrapper {
+		height: 84vw;
+	}
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+	#stories .swiper-button-prev:before {
+		display: none;
+	}
+}
+
+@media (min-width: 480px) and (max-width: 1280px) {
+	#stories .swiper-button-next:before {
+    	left: -21vw!important;
 	}
 }

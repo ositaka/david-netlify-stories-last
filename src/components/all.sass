@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap')
 
 
 .navbar .navbar-menu
@@ -78,7 +78,8 @@ footer.footer
 
 * 
   font-family: 'Roboto Condensed', sans-serif!important
-
+  outline: none
+  
 html,
 body
   color: white
@@ -91,6 +92,8 @@ section
   padding-top: 2.5vw
   padding-bottom: 2.15vw
   background-color: transparent
+  .navbar-start
+    float: left
   .container
     max-width: 87.5vw!important
   button,
@@ -194,13 +197,16 @@ footer .content
       margin-top: -6.75vw
   p
     font-size: .9rem
+    font-weight: 300
     text-transform: uppercase
     text-align: right
+    letter-spacing: 3.5px
     margin-right: 1.1vw
     margin-top: 3vw
   small
     float: right
-    letter-spacing: 1px
+    font-weight: 300
+    letter-spacing: 2.5px
     margin-right: 1.1vw
     margin-top: -3px
     opacity: .3
@@ -226,10 +232,12 @@ footer .content
     text-transform: uppercase
     font-weight: 400
     font-size: .8rem
+    letter-spacing: 2.5px
   .input,
   .textarea
     font-size: 1.3rem
-    font-weight: 400
+    font-weight: 300
+    letter-spacing: 1.5px
     color: rgba(255,255,255,.63)
     background: transparent
     border: unset
@@ -305,7 +313,23 @@ footer
 
 // responsiveness
 +tablet-only
-  
+  .navbar
+    display: flex
+    justify-content: space-between
+    .navbar-end
+      text-align: right!important
+      .navbar-item
+        display: inline
+        font-size: 2vw
+  #biography 
+    padding: 25vw 20vw
+    blockquote
+      font-size: 3vw
+  footer
+    font-size: 1rem
+    letter-spacing: 3.5px
+    span
+      display: block
 
 +mobile
   .navbar
@@ -321,7 +345,7 @@ footer
         opacity: 1
         padding: 0
   .navbar .container,
-  section:not(#home),
+  section:not(#home, .story-post),
   .hero
     width: calc(100% - 3.5rem)!important
     padding-left: 0!important
@@ -348,25 +372,50 @@ footer
     .title
       position: unset!important
       transform: unset!important
-      margin-bottom: 20vw
     .story-title
       margin-left: 0!important
-  .contact
-    .subtitle
-      font-size: 9vw
-    .button
-      padding: 4vw 8vw
+      font-size: 1.1rem
   #biography
+    margin-top: 44vw
+    margin-bottom: 44vw
     blockquote
       font-size: 1.4rem
       text-align: right
       letter-spacing: 2px
       &:before
-        width: 20vw
-        height: 16vw
+        width: 25vw
+        height: 20vw
         position: relative
-        left: 4vw
-        top: -4vw
+        left: 2vw
+        top: -2vw
   .contact
     .subtitle
-      margin: 10vw 0
+      margin-top: 25vw!important
+      font-size: 9vw
+    label
+      margin-top: 12.5vw
+      font-size: .9rem!important
+      letter-spacing: 3.5px!important
+    input,
+    textarea
+      margin-top: -2.5vw
+      letter-spacing: 2.5px!important
+    .button
+      margin-top: 1rem
+      padding: 4vw 8vw
+  footer
+    display: block
+    font-size: 1.2rem
+    letter-spacing: 2.5px
+    padding-top: 1.75rem
+    margin-bottom: 3rem!important
+    .content
+      padding: 1.75rem
+      span
+        display: block
+  .story-post
+    .story-title
+      bottom: 3rem!important
+      margin-left: 1.75rem
+    .close-story
+      padding: .75rem .5rem

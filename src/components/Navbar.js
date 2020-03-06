@@ -12,7 +12,6 @@ const Navbar = class extends React.Component {
 				aria-label="main-navigation"
 			>
 				<div className="container">
-					<div className="navbar-brand"></div>
 					<div id="navMenu" className="navbar-menu">
 						<div className="navbar-start has-text-centered">
 							<a
