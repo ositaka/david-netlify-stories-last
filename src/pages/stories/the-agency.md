@@ -7,21 +7,21 @@ featuredimage: /img/the-agency-cover.jpg
 gallery:
   images:
     - image: /img/the-agency-1.jpg
-      title: Image Title 1
-      model: Koko, Portugal, 2019
+      title: The Agency
+      model: Lisbon, Portugal, 2019
     - image: /img/the-agency-2.jpg
-      title: Image Title 2
-      model: Samuel, Portugal, 2019
+      title: The Agency
+      model: Lisbon, Portugal, 2019
     - image: /img/the-agency-3.jpg
-      title: Image Title 3
-      model: Samuel, Portugal, 2019
+      title: The Agency
+      model: Lisbon, Portugal, 2019
     - image: /img/the-agency-4.jpg
-      title: Image Title 4
-      model: Samuel, Portugal, 2019
+      title: The Agency
+      model: Lisbon, Portugal, 2019
     - image: /img/the-agency-5.jpg
-      title: Image Title 5
-      model: Samuel, Portugal, 2019
+      title: The Agency
+      model: Lisbon, Portugal, 2019
     - image: /img/the-agency-6.jpg
-      title: Image Title 6
-      model: Samuel, Portugal, 2019
+      title: The Agency
+      model: Lisbon, Portugal, 2019
 ---

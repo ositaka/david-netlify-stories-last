@@ -8,12 +8,12 @@ gallery:
   images:
     - image: /img/zara-yellow-1.jpg
       model: 'Talent: Koko | Fashion by Zara'
-      title: Castles Made of Sand 1
+      title: Castles Made of Sand
     - image: /img/zara-yellow-2.jpg
       model: 'Talent: Koko | Fashion by Zara'
-      title: Castles Made of Sand 2
+      title: Castles Made of Sand
     - image: /img/zara-yellow-3.jpg
       model: 'Talent: Koko | Fashion by Zara'
-      title: Castles Made of Sand 3
+      title: Castles Made of Sand
 ---
 
