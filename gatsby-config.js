@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		title: 'David Alioth',
-		description: 'Photography',
+		description: 'Photographer and Creative Director',
 		email: 'info@davidalioth.com',
 		facebook: '#',
 		instagram: 'https://www.instagram.com/the_davidalioth/'

@@ -17,7 +17,7 @@
 	animation-delay: 860ms;
 }
 
-#home .hero-swiper {
+#home .gatsby-image-wrapper {
 	animation: fadeIn 1800ms ease forwards;
 	animation-delay: 780ms;
 	opacity: 0;
@@ -25,10 +25,15 @@
 	transform: translateY(160%);
 }
 
+#home .swiper-slide {
+	background: #0a0d0f;
+}
+
 #home .swiper-pagination {
 	animation: fadeIn 2800ms ease forwards;
-	animation-delay: 120ms;
+	animation-delay: 620ms;
 	transform: translateY(60%);
+	opacity: 0;
 }
 
 #stories .swiper-container .gatsby-image-wrapper {

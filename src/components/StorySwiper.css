@@ -1,6 +1,4 @@
 section.story-post {
-    /* display: flex!important;
-    align-items: center; */
     height: 100vh;
     overflow: hidden;
 
@@ -54,8 +52,8 @@ section.story-post {
 }
 
 .story-post .gatsby-image-wrapper {
-    animation: fadeInImage 900ms ease forwards;
-    animation-delay: 300ms;
+    animation: fadeInImage 1800ms ease forwards;
+    animation-delay: 900ms;
     opacity: 0;
 }
 

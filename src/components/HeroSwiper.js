@@ -18,7 +18,8 @@ const HeroSwiper = ({ slides }) => {
 			disableOnInteraction: false
 		},
 		effect: 'fade',
-		speed: 1200
+		speed: 1200,
+		preloadImages: false
 	}
 
 	return (
