@@ -32,6 +32,12 @@ const TemplateWrapper = ({ children }) => {
 					href={`${withPrefix('/')}img/favicon-16x16.png`}
 					sizes="16x16"
 				/>
+				<link
+					rel="shortcut icon"
+					type="image/png"
+					href={`${withPrefix('/')}img/favicon.ico`}
+					sizes="16x16"
+				/>
 
 				<link
 					rel="mask-icon"
