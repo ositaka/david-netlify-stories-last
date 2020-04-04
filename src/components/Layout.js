@@ -34,9 +34,9 @@ const TemplateWrapper = ({ children }) => {
 				/>
 				<link
 					rel="shortcut icon"
-					type="image/png"
-					href={`${withPrefix('/')}img/favicon.ico`}
-					sizes="16x16"
+					type="image/svg+xml"
+					href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
+					sizes="96x96"
 				/>
 
 				<link
