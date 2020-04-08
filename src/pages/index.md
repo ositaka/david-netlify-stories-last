@@ -2,13 +2,11 @@
 templateKey: index-page
 heroSwiper:
   images:
-    - image: /img/slideshow-2.jpg
-      title: Space Girl
-    - image: /img/samuel-2.jpg
-      title: Samoel
     - image: /img/slideshow-1.jpg
       title: Slideshow 1
-  title: David Tocco
+    - image: /img/slideshow-2.jpg
+      title: Space Girl
+  title: David Alioth
   subtitle1: Photographer
   subtitle2: Creative Director
 biography:
