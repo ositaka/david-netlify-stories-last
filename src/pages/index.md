@@ -16,5 +16,5 @@ biography:
     What I like about photographs is that they capture a moment that’s gone
     forever, impossible to reproduce.
 contact:
-  title: Interested in working with me? Another test
+  title: Interested in working with me?
 ---
