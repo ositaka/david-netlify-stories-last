@@ -6,8 +6,6 @@ heroSwiper:
       title: Space Girl
     - image: /img/slideshow-1.jpg
       title: Slideshow 1
-    - title: Give a simple title
-      image: /img/img_20200129_131057.jpg
   title: David Alioth
   subtitle1: Photographer
   subtitle2: Creative Director
