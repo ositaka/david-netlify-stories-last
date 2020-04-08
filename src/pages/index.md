@@ -6,7 +6,7 @@ heroSwiper:
       title: Slideshow 1
     - image: /img/slideshow-2.jpg
       title: Space Girl
-  title: David Alioth
+  title: David Tocco
   subtitle1: Photographer
   subtitle2: Creative Director
 biography:
